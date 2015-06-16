@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/anaLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-7509471109044386/4329371150" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/yeniOyunButon"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Yeni Oyun" />
+
+    <Button
+        android:id="@+id/cozButon"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_above="@+id/yeniOyunButon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Oyunu Çöz" />
+
+    <TextView
+        android:id="@+id/enYuksek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/hamle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enYuksek"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
